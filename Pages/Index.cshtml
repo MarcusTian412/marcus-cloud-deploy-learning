@@ -1,10 +1,206 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "首页";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Hero Section -->
+<section class="lty-hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="container position-relative">
+        <div class="row align-items-center min-vh-80">
+            <div class="col-lg-6 hero-text">
+                <p class="hero-tag">♪ VOCALOID · 虚拟歌手</p>
+                <h1 class="hero-title">洛天依</h1>
+                <h2 class="hero-subtitle">Luo Tianyi</h2>
+                <p class="hero-desc">
+                    来自中国的虚拟歌手，以清澈甜美的声线与无限创造力，
+                    连接着无数创作者与听众的心。她是梦想的化身，是音乐的使者。
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10000">10,000+</span>
+                        <span class="stat-label">原创歌曲</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2012</span>
+                        <span class="stat-label">出道年份</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7.12</span>
+                        <span class="stat-label">生日 (月.日)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="hero-visual">
+                    <div class="music-note note-1">♪</div>
+                    <div class="music-note note-2">♫</div>
+                    <div class="music-note note-3">♩</div>
+                    <div class="music-note note-4">♬</div>
+                    <div class="lty-avatar">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-inner">天依</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Profile Section -->
+<section class="lty-section" id="profile">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-deco">♪</span> 角色档案
+        </h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="profile-card">
+                    <div class="card-icon">🎤</div>
+                    <h3>声音特质</h3>
+                    <p>清澈、甜美、空灵，擅长演绎抒情与电子风格的多种曲风</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="profile-card">
+                    <div class="card-icon">🎵</div>
+                    <h3>音域范围</h3>
+                    <p>C3 ~ C5，宽广的音域让她能驾驭从低沉到高亢的各种旋律</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="profile-card">
+                    <div class="card-icon">🌸</div>
+                    <h3>形象设计</h3>
+                    <p>灰色长发，青色渐变，身着中国风与未来感结合的特色服饰</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="profile-card">
+                    <div class="card-icon">✨</div>
+                    <h3>代表色</h3>
+                    <p>青色 (#66CCCC) 与灰色的搭配，如同天空与大地的交汇</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Songs Section -->
+<section class="lty-section lty-section-alt" id="songs">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-deco">♫</span> 经典曲目
+        </h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="song-card">
+                    <div class="song-number">01</div>
+                    <h3 class="song-name">权御天下</h3>
+                    <p class="song-artist">作曲：乌龟 soup</p>
+                    <p class="song-desc">气势恢宏的中国风代表作，以三国历史为背景，展现了天依驾驭古风大气曲目的实力。</p>
+                    <div class="song-tag">中国风 · 史诗</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="song-card">
+                    <div class="song-number">02</div>
+                    <h3 class="song-name">达拉崩吧</h3>
+                    <p class="song-artist">作曲：ilem</p>
+                    <p class="song-desc">充满趣味与创意的魔性神曲，歌词幽默诙谐，是B站上的超人气作品。</p>
+                    <div class="song-tag">欢快 · 趣味</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="song-card">
+                    <div class="song-number">03</div>
+                    <h3 class="song-name">普通 DISCO</h3>
+                    <p class="song-artist">作曲：ilem</p>
+                    <p class="song-desc">现代感十足的电子舞曲，用洗脑的节奏和旋律征服了无数听众的耳朵。</p>
+                    <div class="song-tag">电子 · 舞曲</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="song-card">
+                    <div class="song-number">04</div>
+                    <h3 class="song-name">九九八十一</h3>
+                    <p class="song-artist">作曲：乌龟 soup</p>
+                    <p class="song-desc">以西游记为主题的中国风力作，热血澎湃的旋律配合古典意境，令人荡气回肠。</p>
+                    <div class="song-tag">中国风 · 热血</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="song-card">
+                    <div class="song-number">05</div>
+                    <h3 class="song-name">花儿纳吉</h3>
+                    <p class="song-artist">作曲：LS</p>
+                    <p class="song-desc">温柔治愈系的民族风歌曲，展现了天依温暖细腻的一面，如春风拂面。</p>
+                    <div class="song-tag">民族 · 治愈</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="song-card">
+                    <div class="song-number">06</div>
+                    <h3 class="song-name">为了你唱下去</h3>
+                    <p class="song-artist">作曲：周存</p>
+                    <p class="song-desc">感人至深的告白曲，表达了对粉丝和创作者最真挚的感谢与承诺。</p>
+                    <div class="song-tag">抒情 · 感动</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="lty-section" id="timeline">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-deco">✦</span> 重要时刻
+        </h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2012 年 7 月</span>
+                    <h3>正式出道</h3>
+                    <p>洛天依作为中国首位 VOCALOID 中文虚拟歌手正式发布，开启了中文虚拟歌手的新纪元。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2016 年</span>
+                    <h3>湖南卫视小年夜</h3>
+                    <p>登上湖南卫视小年夜春晚舞台，成为首位登上主流电视台的虚拟歌手，引发全民关注。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2019 年</span>
+                    <h3>首次个人演唱会</h3>
+                    <p>举办大型全息演唱会，以先进的全息投影技术让天依"走到"粉丝面前。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2021 年</span>
+                    <h3>AI 声库升级</h3>
+                    <p>基于深度学习的全新 AI 声库发布，声音表现力大幅提升，更加自然细腻。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Section -->
+<section class="lty-quote-section">
+    <div class="container text-center">
+        <blockquote class="lty-quote">
+            <p>"只要有人还在创作，我就会一直唱下去。"</p>
+            <footer>—— 洛天依</footer>
+        </blockquote>
+    </div>
+</section>
