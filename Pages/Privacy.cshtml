@@ -1,8 +1,30 @@
 ﻿@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "关于本站";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<section class="lty-section">
+    <div class="container" style="max-width: 720px;">
+        <h2 class="section-title">
+            <span class="title-deco">♪</span> @ViewData["Title"]
+        </h2>
+
+        <div class="profile-card" style="text-align: left; padding: 2.5rem;">
+            <h3 style="color: var(--lty-primary-dark); margin-bottom: 1rem;">关于洛天依</h3>
+            <p style="line-height: 1.9; color: var(--lty-text-light);">
+                洛天依是由上海禾念信息科技有限公司（Vsinger）推出的中文 VOCALOID 虚拟歌手。
+                她诞生于 2012 年 7 月 12 日，是中国第一位 VOCALOID 中文声库虚拟歌手。
+            </p>
+            <p style="line-height: 1.9; color: var(--lty-text-light);">
+                凭借清澈甜美的声线和可爱的形象，洛天依迅速在网络上走红，
+                成为中国虚拟歌手文化的标志性人物。众多音乐创作者（P主）为她创作了上万首原创歌曲，
+                涵盖古风、电子、流行、摇滚等多种风格。
+            </p>
+            <p style="line-height: 1.9; color: var(--lty-text-light); margin-bottom: 0;">
+                本页面是一个洛天依主题的展示站，使用 ASP.NET Core Razor Pages 构建，
+                以 #66CCCC 青色为主题色，致敬这位深受喜爱的虚拟歌手。
+            </p>
+        </div>
+    </div>
+</section>
